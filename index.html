@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fábrica de Sites - Criação de Sites com IA</title>
+    <meta
+      name="description"
+      content="Criamos sites modernos e responsivos utilizando as mais avançadas tecnologias e inteligência artificial. Transforme sua presença digital conosco."
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="robot.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body class="dark-theme">
+    <!-- Header -->
+    <header class="header">
+      <nav class="nav">
+        <div class="nav-container">
+          <div class="nav-brand">
+            <h1 class="logo">Fábrica de Sites</h1>
+          </div>
+          <div class="nav-menu">
+            <a href="#home" class="nav-link">Início</a>
+            <a href="#about" class="nav-link">Sobre</a>
+            <a href="#gallery" class="nav-link">Galeria</a>
+            <a href="#technologies" class="nav-link">Tecnologias</a>
+            <a href="#pricing" class="nav-link">Valores</a>
+            <a href="#contact" class="nav-link">Contato</a>
+          </div>
+          <div class="nav-actions">
+            <button
+              class="theme-toggle"
+              id="themeToggle"
+              aria-label="Alternar tema"
+            >
+              <span class="theme-icon"><i class="fa-solid fa-moon"></i></span>
+            </button>
+            <button
+              class="mobile-menu-toggle"
+              id="mobileMenuToggle"
+              aria-label="Menu mobile"
+            >
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-background"></div>
+      <div class="hero-container">
+        <div class="hero-content">
+          <h1 class="hero-title">
+            <span class="hero-title-main">Criamos Sites</span>
+            <span class="hero-title-accent">do Futuro</span>
+          </h1>
+          <p class="hero-description">
+            Transformamos suas ideias em experiências digitais extraordinárias.
+            Utilizamos as mais avançadas tecnologias e inteligência artificial
+            para criar sites modernos, responsivos e de alta performance.
+          </p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary">Solicitar Orçamento</a>
+            <a href="#gallery" class="btn btn-secondary">Ver Projetos</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <!--<img src="robo.webp" alt="" />-->
+          <div class="robot-container">
+            <div class="robot">
+              <!-- Cabeça do robô -->
+              <div class="head">
+                <!-- Conectores laterais -->
+                <div class="connector connector-left"></div>
+                <div class="connector connector-right"></div>
+
+                <!-- Tela/Face -->
+                <div class="face">
+                  <!-- Olhos -->
+                  <div class="eye eye-left"></div>
+                  <div class="eye eye-right"></div>
+                </div>
+              </div>
+
+              <!-- Corpo do robô -->
+              <div class="body">
+                <!-- Faixa superior -->
+                <div class="body-stripe"></div>
+
+                <!-- Detalhe triangular laranja -->
+                <div class="chest-triangle"></div>
+              </div>
+
+              <!-- Braços -->
+              <div class="arm arm-left"></div>
+              <div class="arm arm-right"></div>
+
+              <!-- Sombra -->
+              <div class="shadow"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Sobre nós</h2>
+          <p class="section-subtitle">
+            Somos especialistas em criar experiências digitais que conectam
+            marcas aos seus clientes
+          </p>
+        </div>
+        <div class="about-content">
+          <div class="about-text">
+            <h3>Inovação e Tecnologia</h3>
+            <p>
+              Na Fábrica de Sites, combinamos criatividade humana com o poder da
+              inteligência artificial para desenvolver sites únicos e
+              funcionais. Nossa equipe utiliza as mais modernas tecnologias de
+              desenvolvimento web para garantir que seu site seja rápido, seguro
+              e otimizado para todos os dispositivos.
+            </p>
+            <div class="about-features">
+              <div class="feature">
+                <div class="feature-icon">
+                  <i class="fa-solid fa-rocket"></i>
+                </div>
+                <div class="feature-text">
+                  <h4>Performance Otimizada</h4>
+                  <p>Sites ultra-rápidos com carregamento otimizado</p>
+                </div>
+              </div>
+              <div class="feature">
+                <div class="feature-icon">
+                  <i class="fa-solid fa-palette"></i>
+                </div>
+                <div class="feature-text">
+                  <h4>Design Moderno</h4>
+                  <p>
+                    Interfaces elegantes e experiência do usuário excepcional
+                  </p>
+                </div>
+              </div>
+              <div class="feature">
+                <div class="feature-icon">
+                  <i class="fa-solid fa-robot"></i>
+                </div>
+                <div class="feature-text">
+                  <h4>Inteligência Artificial</h4>
+                  <p>Utilizamos IA para otimização e personalização</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Nossos Projetos</h2>
+          <p class="section-subtitle">
+            Conheça alguns dos sites incríveis que desenvolvemos para nossos
+            clientes
+          </p>
+        </div>
+        <div class="gallery-grid">
+          <div class="gallery-card">
+            <div class="card-image">
+              <img
+                src="images/site_exemplo_1.jpeg"
+                alt="Portfolio de Web Design"
+                loading="lazy"
+              />
+              <div class="card-overlay">
+                <div class="card-actions">
+                  <button class="btn-icon">👁️</button>
+                  <button class="btn-icon">🔗</button>
+                </div>
+              </div>
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Portfolio Criativo</h3>
+              <p class="card-description">
+                Site portfolio moderno com animações suaves e design responsivo
+                para designer freelancer.
+              </p>
+            </div>
+          </div>
+
+          <div class="gallery-card">
+            <div class="card-image">
+              <img
+                src="images/site_exemplo_2.webp"
+                alt="Site de Desenvolvedor"
+                loading="lazy"
+              />
+              <div class="card-overlay">
+                <div class="card-actions">
+                  <button class="btn-icon">👁️</button>
+                  <button class="btn-icon">🔗</button>
+                </div>
+              </div>
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Developer Portfolio</h3>
+              <p class="card-description">
+                Portfolio interativo para desenvolvedor com seções dinâmicas e
+                integração com GitHub.
+              </p>
+            </div>
+          </div>
+
+          <div class="gallery-card">
+            <div class="card-image">
+              <img
+                src="images/site_exemplo_3.png"
+                alt="Site Corporativo"
+                loading="lazy"
+              />
+              <div class="card-overlay">
+                <div class="card-actions">
+                  <button class="btn-icon">👁️</button>
+                  <button class="btn-icon">🔗</button>
+                </div>
+              </div>
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Site Corporativo</h3>
+              <p class="card-description">
+                Website institucional elegante com foco em conversão e
+                experiência do usuário.
+              </p>
+            </div>
+          </div>
+
+          <div class="gallery-card">
+            <div class="card-image">
+              <img
+                src="images/site_exemplo_4.jpeg"
+                alt="E-commerce Moderno"
+                loading="lazy"
+              />
+              <div class="card-overlay">
+                <div class="card-actions">
+                  <button class="btn-icon">👁️</button>
+                  <button class="btn-icon">🔗</button>
+                </div>
+              </div>
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">E-commerce Premium</h3>
+              <p class="card-description">
+                Loja virtual completa com sistema de pagamento integrado e
+                painel administrativo.
+              </p>
+            </div>
+          </div>
+
+          <div class="gallery-card">
+            <div class="card-image">
+              <img
+                src="images/site_exemplo_5.jpg"
+                alt="Blog Pessoal"
+                loading="lazy"
+              />
+              <div class="card-overlay">
+                <div class="card-actions">
+                  <button class="btn-icon">👁️</button>
+                  <button class="btn-icon">🔗</button>
+                </div>
+              </div>
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Blog Interativo</h3>
+              <p class="card-description">
+                Plataforma de blog com sistema de comentários e integração com
+                redes sociais.
+              </p>
+            </div>
+          </div>
+
+          <div class="gallery-card">
+            <div class="card-image">
+              <img
+                src="images/site_exemplo_6.png"
+                alt="Landing Page"
+                loading="lazy"
+              />
+              <div class="card-overlay">
+                <div class="card-actions">
+                  <button class="btn-icon">👁️</button>
+                  <button class="btn-icon">🔗</button>
+                </div>
+              </div>
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Landing Page</h3>
+              <p class="card-description">
+                Página de conversão otimizada para campanhas de marketing
+                digital com alta taxa de conversão.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="section-cta">
+          <a
+            href="https://wa.me/5511999999999?text=Olá! Gostaria de solicitar um orçamento para criação do meu site."
+            class="btn btn-primary"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fa-brands fa-whatsapp"></i> Solicitar Orçamento via
+            WhatsApp
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technologies Section -->
+    <section id="technologies" class="technologies">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Tecnologias que Utilizamos</h2>
+          <p class="section-subtitle">
+            Trabalhamos com as mais modernas ferramentas e frameworks do mercado
+          </p>
+        </div>
+        <div class="tech-grid">
+          <div class="tech-item">
+            <div class="tech-icon">
+              <i class="fa-brands fa-html5"></i>
+            </div>
+            <div class="tech-info">
+              <h4>HTML5</h4>
+              <p>Estrutura semântica e moderna para seus sites</p>
+            </div>
+          </div>
+
+          <div class="tech-item">
+            <div class="tech-icon">
+              <i class="fa-brands fa-css3-alt"></i>
+            </div>
+            <div class="tech-info">
+              <h4>CSS3</h4>
+              <p>Estilos avançados e animações fluidas</p>
+            </div>
+          </div>
+
+          <div class="tech-item">
+            <div class="tech-icon">
+              <i class="fa-brands fa-js"></i>
+            </div>
+            <div class="tech-info">
+              <h4>JavaScript</h4>
+              <p>Interatividade e funcionalidades dinâmicas</p>
+            </div>
+          </div>
+
+          <div class="tech-item">
+            <div class="tech-icon">
+              <i class="fa-brands fa-react"></i>
+            </div>
+            <div class="tech-info">
+              <h4>React</h4>
+              <p>Interfaces modernas e componentes reutilizáveis</p>
+            </div>
+          </div>
+
+          <div class="tech-item">
+            <div class="tech-icon">
+              <i class="fa-brands fa-node-js"></i>
+            </div>
+            <div class="tech-info">
+              <h4>Node.js</h4>
+              <p>Backend robusto e APIs escaláveis</p>
+            </div>
+          </div>
+
+          <div class="tech-item">
+            <div class="tech-icon">
+              <i class="fa-solid fa-robot"></i>
+            </div>
+            <div class="tech-info">
+              <h4>Inteligência Artificial</h4>
+              <p>IA para otimização e personalização</p>
+            </div>
+          </div>
+
+          <div class="tech-item">
+            <div class="tech-icon">
+              <i class="fa-brands fa-wordpress"></i>
+            </div>
+            <div class="tech-info">
+              <h4>Design Responsivo</h4>
+              <p>Adaptação perfeita para todos os dispositivos</p>
+            </div>
+          </div>
+
+          <div class="tech-item">
+            <div class="tech-icon">
+              <i class="fa-brands fa-wordpress"></i>
+            </div>
+            <div class="tech-info">
+              <h4>SEO Otimizado</h4>
+              <p>Melhor posicionamento nos buscadores</p>
+            </div>
+          </div>
+
+          <!--
+          <div class="tech-category">
+            <h3 class="tech-category-title">Frontend</h3>
+            <div class="tech-items">
+              <div class="tech-item">
+                <div class="tech-icon">
+                  <img
+                    src="assets/html_css_js.jpg"
+                    alt="HTML, CSS, JavaScript"
+                  />
+                </div>
+                <div class="tech-info">
+                  <h4>HTML5, CSS3, JavaScript</h4>
+                  <p>Base sólida para desenvolvimento web moderno</p>
+                </div>
+              </div>
+              <div class="tech-item">
+                <div class="tech-icon">
+                  <img src="assets/react.png" alt="React" />
+                </div>
+                <div class="tech-info">
+                  <h4>React</h4>
+                  <p>Biblioteca para interfaces dinâmicas e interativas</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tech-category">
+            <h3 class="tech-category-title">Backend</h3>
+            <div class="tech-items">
+              <div class="tech-item">
+                <div class="tech-icon">
+                  <img src="assets/python.png" alt="Python" />
+                </div>
+                <div class="tech-info">
+                  <h4>Python</h4>
+                  <p>Linguagem versátil para desenvolvimento backend</p>
+                </div>
+              </div>
+              <div class="tech-item">
+                <div class="tech-icon">
+                  <img src="assets/flask.jpg" alt="Flask" />
+                </div>
+                <div class="tech-info">
+                  <h4>Flask</h4>
+                  <p>Framework web minimalista e poderoso</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tech-category">
+            <h3 class="tech-category-title">Inteligência Artificial</h3>
+            <div class="tech-items">
+              <div class="tech-item">
+                <div class="tech-icon">
+                  <img src="assets/ai.jpg" alt="Inteligência Artificial" />
+                </div>
+                <div class="tech-info">
+                  <h4>IA Generativa</h4>
+                  <p>Criação automatizada de conteúdo e otimização</p>
+                </div>
+              </div>
+              <div class="tech-item">
+                <div class="tech-icon">
+                  <div class="ai-icon">🧠</div>
+                </div>
+                <div class="tech-info">
+                  <h4>Machine Learning</h4>
+                  <p>Personalização e análise de comportamento do usuário</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          -->
+        </div>
+        <div class="tech-benefits">
+          <h3>Por que essas tecnologias?</h3>
+          <div class="benefits-grid">
+            <div class="benefit">
+              <div class="benefit-icon"><i class="fa-solid fa-bolt"></i></div>
+              <h4>Performance</h4>
+              <p>Sites ultra-rápidos com carregamento otimizado</p>
+            </div>
+            <div class="benefit">
+              <div class="benefit-icon"><i class="fa-solid fa-lock"></i></div>
+              <h4>Segurança</h4>
+              <p>Proteção avançada contra ameaças digitais</p>
+            </div>
+            <div class="benefit">
+              <div class="benefit-icon">
+                <i class="fa-solid fa-mobile-screen-button"></i>
+              </div>
+              <h4>Responsividade</h4>
+              <p>Perfeito em todos os dispositivos e telas</p>
+            </div>
+            <div class="benefit">
+              <div class="benefit-icon"><i class="fa-solid fa-rocket"></i></div>
+              <h4>Escalabilidade</h4>
+              <p>Cresce junto com o seu negócio</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Nossos Valores</h2>
+          <p class="section-subtitle">
+            Planos flexíveis para atender diferentes necessidades e orçamentos
+          </p>
+        </div>
+        <div class="pricing-grid">
+          <div class="pricing-card">
+            <div class="pricing-header">
+              <h3 class="pricing-title">Landing Page</h3>
+              <div class="pricing-price">
+                <span class="currency">R$</span>
+                <span class="amount">1.500</span>
+              </div>
+              <p class="pricing-description">
+                Perfeito para apresentar seu negócio
+              </p>
+            </div>
+            <div class="pricing-features">
+              <ul>
+                <li>
+                  <i class="fa-solid fa-circle-check"></i> Design responsivo
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-check"></i> Otimização SEO básica
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-check"></i> Formulário de contato
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-check"></i> Integração com redes
+                  sociais
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-check"></i> Hospedagem por 1 ano
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-check"></i> Suporte por 3 meses
+                </li>
+              </ul>
+            </div>
+            <div class="pricing-action">
+              <a
+                href="https://wa.me/5511999999999?text=Olá! Tenho interesse no plano Landing Page. Gostaria de mais informações."
+                class="btn btn-outline"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Escolher Plano
+              </a>
+            </div>
+          </div>
+
+          <div class="pricing-card featured">
+            <div class="pricing-badge">Mais Popular</div>
+            <div class="pricing-header">
+              <h3 class="pricing-title">Site Institucional</h3>
+              <div class="pricing-price">
+                <span class="currency">R$</span>
+                <span class="amount">3.500</span>
+              </div>
+              <p class="pricing-description">
+                Ideal para empresas e profissionais
+              </p>
+            </div>
+            <div class="pricing-features">
+              <ul>
+                <li><i class="fa-solid fa-circle-check"></i> Até 5 páginas</li>
+                <li>
+                  <i class="fa-solid fa-circle-check"></i> Design personalizado
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-check"></i> Otimização SEO
+                  avançada
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-check"></i> Painel administrativo
+                </li>
+                <li><i class="fa-solid fa-circle-check"></i> Blog integrado</li>
+                <li>
+                  <i class="fa-solid fa-circle-check"></i> Analytics e
+                  relatórios
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-check"></i> Hospedagem por 1 ano
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-check"></i> Suporte por 6 meses
+                </li>
+              </ul>
+            </div>
+            <div class="pricing-action">
+              <a
+                href="https://wa.me/5511999999999?text=Olá! Tenho interesse no plano Site Institucional. Gostaria de mais informações."
+                class="btn btn-primary"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Escolher Plano
+              </a>
+            </div>
+          </div>
+
+          <div class="pricing-card">
+            <div class="pricing-header">
+              <h3 class="pricing-title">E-commerce</h3>
+              <div class="pricing-price">
+                <span class="currency">R$</span>
+                <span class="amount">7.500</span>
+              </div>
+              <p class="pricing-description">Loja virtual completa</p>
+            </div>
+            <div class="pricing-features">
+              <ul>
+                <li>
+                  <i class="fa-solid fa-circle-check"></i> Catálogo de produtos
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-check"></i> Carrinho de compras
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-check"></i> Gateway de pagamento
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-check"></i> Gestão de estoque
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-check"></i> Painel administrativo
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-check"></i> Relatórios de vendas
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-check"></i> Integração com
+                  correios
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-check"></i> Suporte por 12 meses
+                </li>
+              </ul>
+            </div>
+            <div class="pricing-action">
+              <a
+                href="https://wa.me/5511999999999?text=Olá! Tenho interesse no plano E-commerce. Gostaria de mais informações."
+                class="btn btn-outline"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Escolher Plano
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="pricing-note">
+          <p>
+            💡 <strong>Todos os planos incluem:</strong> Certificado SSL, backup
+            automático, otimização de velocidade e design responsivo
+          </p>
+        </div>
+        <div class="section-cta">
+          <a
+            href="https://wa.me/5511999999999?text=Olá! Gostaria de solicitar um orçamento personalizado para meu projeto."
+            class="btn btn-primary"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fa-brands fa-whatsapp"></i> Solicitar Orçamento
+            Personalizado
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Vamos Conversar?</h2>
+          <p class="section-subtitle">
+            Entre em contato conosco e transforme sua ideia em realidade digital
+          </p>
+        </div>
+        <div class="contact-content">
+          <div class="contact-info">
+            <h3>Fale Conosco</h3>
+            <p>
+              Estamos prontos para ouvir suas ideias e criar o site perfeito
+              para seu negócio.
+            </p>
+            <div class="contact-methods">
+              <div class="contact-method">
+                <div class="contact-icon">
+                  <i class="fa-brands fa-whatsapp"></i>
+                </div>
+                <div class="contact-details">
+                  <h4>WhatsApp</h4>
+                  <p>(11) 99999-9999</p>
+                </div>
+              </div>
+              <div class="contact-method">
+                <div class="contact-icon">
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="contact-details">
+                  <h4>E-mail</h4>
+                  <p>contato@fabricadesites.com</p>
+                </div>
+              </div>
+              <div class="contact-method">
+                <div class="contact-icon">
+                  <i class="fa-solid fa-clock"></i>
+                </div>
+                <div class="contact-details">
+                  <h4>Horário de Atendimento</h4>
+                  <p>Segunda a Sexta: 9h às 18h</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="contact-cta">
+            <h3>Pronto para começar?</h3>
+            <p>
+              Clique no botão abaixo e vamos iniciar uma conversa sobre seu
+              projeto!
+            </p>
+            <a
+              href="https://wa.me/5511999999999?text=Olá! Gostaria de conversar sobre a criação do meu site."
+              class="btn btn-primary btn-large"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa-brands fa-whatsapp"></i> Iniciar Conversa no WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <h3>Fábrica de Sites</h3>
+            <p>
+              Criando experiências digitais extraordinárias com tecnologia e
+              criatividade.
+            </p>
+          </div>
+          <div class="footer-links">
+            <div class="footer-column">
+              <h4>Serviços</h4>
+              <ul>
+                <li><a href="#gallery">Landing Pages</a></li>
+                <li><a href="#gallery">Sites Institucionais</a></li>
+                <li><a href="#gallery">E-commerce</a></li>
+                <li><a href="#gallery">Web Apps</a></li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h4>Empresa</h4>
+              <ul>
+                <li><a href="#about">Sobre Nós</a></li>
+                <li><a href="#technologies">Tecnologias</a></li>
+                <li><a href="#pricing">Valores</a></li>
+                <li><a href="#contact">Contato</a></li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h4>Contato</h4>
+              <ul>
+                <li><i class="fa-brands fa-whatsapp"></i> (11) 99999-9999</li>
+                <li>
+                  <i class="fa-solid fa-envelope"></i>
+                  contato@fabricadesites.com
+                </li>
+                <li>
+                  <i class="fa-solid fa-globe"></i> www.fabricadesites.com
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Fábrica de Sites. Todos os direitos reservados.</p>
+          <p>Desenvolvido com 💜 e tecnologia de ponta</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="robot.js"></script>
+  </body>
+</html>
