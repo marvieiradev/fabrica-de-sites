@@ -1,5 +1,10 @@
 // Aguarda o carregamento completo do DOM
 document.addEventListener("DOMContentLoaded", function () {
+  initGalleryAnimations();
+  initPricingAnimations();
+  initTechAnimations();
+  initCounterAnimation();
+
   // ===== TOGGLE DE TEMA =====
   const themeToggle = document.getElementById("themeToggle");
   const body = document.body;
@@ -169,17 +174,17 @@ document.addEventListener("DOMContentLoaded", function () {
   const observer = new IntersectionObserver(function (entries) {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        entry.target.classList.add("animate-on-scroll");
-        observer.unobserve(entry.target);
+        entry.target.classList.add("animated");
+        //observer.unobserve(entry.target);
       }
     });
   }, observerOptions);
 
   // Observa elementos para animação
-  const animateElements = document.querySelectorAll(
-    ".gallery-card, .tech-category, .pricing-card, .feature, .benefit"
-  );
+  const animateElements = document.querySelectorAll(`
+    .hero-content, .hero-visual, .section-header, .about-content, .gallery-card, .tech-item, .pricing-card, .feature, .benefit, .contact-info, .contact-method`);
   animateElements.forEach((el) => {
+    el.classList.add("animate-on-scroll");
     observer.observe(el);
   });
 
@@ -220,27 +225,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // ===== ANIMAÇÃO DOS ELEMENTOS FLUTUANTES =====
-  const floatingElements = document.querySelectorAll(".floating-element");
-
-  function animateFloatingElements() {
-    floatingElements.forEach((element, index) => {
-      const speed = 0.5 + index * 0.2;
-      const amplitude = 20 + index * 10;
-      const time = Date.now() * 0.001 * speed;
-
-      const x = Math.sin(time) * amplitude;
-      const y = Math.cos(time * 0.7) * amplitude;
-      const rotation = time * 30;
-
-      element.style.transform = `translate(${x}px, ${y}px) rotate(${rotation}deg)`;
-    });
-
-    requestAnimationFrame(animateFloatingElements);
-  }
-
-  animateFloatingElements();
-
   // ===== TYPING ANIMATION =====
   function initTypingAnimation() {
     const heroTitle = document.querySelector(".hero-title-accent");
@@ -261,6 +245,33 @@ document.addEventListener("DOMContentLoaded", function () {
     // Start typing animation after a delay
     setTimeout(typeWriter, 1500);
   }
+
+  // ===== GALLERY CARD ANIMATIONS =====
+  function initGalleryAnimations() {
+    const galleryCards = document.querySelectorAll(".gallery-card");
+
+    galleryCards.forEach((card, index) => {
+      card.style.animationDelay = `${index * 0.1}s`;
+    });
+  }
+
+  // ===== TECH CARDS ANIMATIONS =====
+  function initTechAnimations() {
+    const techCards = document.querySelectorAll(".tech-card");
+    techCards.forEach((card, index) => {
+      card.style.animationDelay = `${index * 0.1}s`;
+    });
+  }
+
+  // ===== PRICING CARDS ANIMATIONS =====
+  function initPricingAnimations() {
+    const pricingCards = document.querySelectorAll(".pricing_card");
+
+    pricingCards.forEach((card, index) => {
+      card.style.animationDelay = `${index * 0.2}s`;
+    });
+  }
+
   initTypingAnimation();
   // ===== PARALLAX EFFECT =====
   function initParallaxEffect() {
@@ -314,8 +325,6 @@ document.addEventListener("DOMContentLoaded", function () {
       counterObserver.observe(counter);
     });
   }
-
-  initCounterAnimation();
 
   // ===== LAZY LOADING PARA IMAGENS =====
   const images = document.querySelectorAll('img[loading="lazy"]');
@@ -534,3 +543,5 @@ function debounce(func, wait) {
     timeout = setTimeout(later, wait);
   };
 }
+
+//
