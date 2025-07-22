@@ -143,6 +143,7 @@ body {
 
 .btn-primary:hover {
   transform: translateY(-2px);
+  color: white !important;
   box-shadow: var(--shadow-neon);
 }
 

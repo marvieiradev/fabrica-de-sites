@@ -346,7 +346,7 @@ class Navigation {
     // Animação do hamburger
     const spans = this.hamburger.querySelectorAll("span");
     if (this.isMenuOpen) {
-      spans[0].style.transform = "rotate(45deg) translate(5px, 5px)";
+      spans[0].style.transform = "rotate(45deg) translate(7px, 5px)";
       spans[1].style.opacity = "0";
       spans[2].style.transform = "rotate(-45deg) translate(7px, -6px)";
     } else {
