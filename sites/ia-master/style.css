@@ -58,10 +58,9 @@ body {
 }
 
 .banner-content {
-  display: inline-block;
+  max-width: 1200px;
   white-space: nowrap;
   animation: scroll-banner 25s linear infinite;
-  padding-left: 100%;
 }
 
 .banner-text {
@@ -69,11 +68,12 @@ body {
   font-size: 14px;
   letter-spacing: 0.5px;
   display: inline-block;
+  padding-right: 100px;
 }
 
 @keyframes scroll-banner {
   0% {
-    transform: translateX(0%);
+    transform: translateX(100%);
   }
   100% {
     transform: translateX(-100%);
@@ -428,6 +428,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
+  z-index: 10000;
 }
 
 .floating-card {
@@ -447,19 +448,19 @@ body {
 
 .card-1 {
   top: 20%;
-  right: -10%;
+  right: 0%;
   animation-delay: 0s;
 }
 
 .card-2 {
   top: 60%;
-  left: -15%;
+  left: 0%;
   animation-delay: 1s;
 }
 
 .card-3 {
   bottom: 20%;
-  right: -5%;
+  right: 0%;
   animation-delay: 2s;
 }
 
@@ -495,6 +496,7 @@ section {
   color: var(--text-secondary);
   max-width: 600px;
   margin: 0 auto;
+  text-align: center;
 }
 
 /* Advantages Section */
@@ -547,6 +549,8 @@ section {
 
 .advantage-icon {
   margin-bottom: 24px;
+  font-size: 48px;
+  color: var(--neon-blue);
 }
 
 .advantage-image {
@@ -656,9 +660,13 @@ section {
   background: var(--card-bg);
   border: 2px solid var(--neon-blue);
   border-radius: var(--border-radius-large);
-  padding: 48px;
+  padding: 38px;
   position: relative;
   box-shadow: var(--shadow-neon);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
 }
 
 .pricing-badge {
@@ -752,12 +760,14 @@ section {
 
 .pricing-features {
   margin-bottom: 40px;
+  display: flex;
+  gap: 20px;
 }
 
 .features-list {
   list-style: none;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: 2fr;
   gap: 16px;
 }
 
@@ -779,6 +789,7 @@ section {
 
 .pricing-cta {
   text-align: center;
+  align-items: center;
 }
 
 .cta-note {
@@ -800,8 +811,8 @@ section {
 
 .investment-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 32px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 25px;
 }
 
 .investment-item {
@@ -810,6 +821,9 @@ section {
   align-items: center;
   gap: 16px;
   text-align: center;
+  padding: 5px;
+  background-color: var(--card-bg);
+  border-radius: 10px;
 }
 
 .investment-icon {
@@ -1024,6 +1038,11 @@ section {
     grid-template-columns: 1fr;
   }
 
+  .pricing-features {
+    flex-direction: column;
+    gap: 15px;
+  }
+
   .trust-badges {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -1113,9 +1132,9 @@ html {
 /* Melhorias de acessibilidade */
 @media (prefers-reduced-motion: reduce) {
   * {
-    animation-duration: 0.01ms !important;
+    /*animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;*/
   }
 }
 

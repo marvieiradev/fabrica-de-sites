@@ -43,30 +43,24 @@ function initializeApp() {
 
     // Fechar menu ao clicar em link
     // const navLinksItems = navLinks.querySelectorAll(".nav-link");
-    navLinksItems.forEach((link) => {
+    navLinksItems.forEach((link, index) => {
       link.addEventListener("click", () => {
         navLinks.classList.remove("mobile-active");
         mobileToggle.classList.remove("active");
         const spans = mobileToggle.querySelectorAll("span");
         spans.forEach((span) => {
-          span.style.transform = "none";
-          span.style.opacity = "1";
+          //span.style.transform = "none";
+          //span.style.opacity = "1";
+          if (index === 1) {
+            span.style.opacity = "0";
+          } else if (index === 2) {
+            span.style.transform = "rotate(-45deg) translate(7px, -6px)";
+          }
         });
       });
     });
   }
-
-  /* if (index === 1){} span.style.opacity = '0';
-                          if (index === 2) span.style.transform = 'rotate(-45deg) translate(7px, -6px)';
-                      } else {
-                          span.style.transform = 'none';
-                          span.style.opacity = '1';
-                      }
-                  });
-              });*/
 }
-//}
-// }
 
 // Scroll Suave
 function setupSmoothScrolling() {
@@ -261,25 +255,6 @@ function setupCTAButtons() {
   ctaButtons.forEach((button) => {
     button.addEventListener("click", function (e) {
       e.preventDefault();
-
-      // Efeito de ripple
-      const ripple = document.createElement("span");
-      ripple.className = "ripple-effect";
-
-      const rect = this.getBoundingClientRect();
-      const size = Math.max(rect.width, rect.height);
-      const x = e.clientX - rect.left - size / 2;
-      const y = e.clientY - rect.top - size / 2;
-
-      ripple.style.width = ripple.style.height = size + "px";
-      ripple.style.left = x + "px";
-      ripple.style.top = y + "px";
-
-      this.appendChild(ripple);
-
-      setTimeout(() => {
-        ripple.remove();
-      }, 600);
 
       // Simular redirecionamento para checkout
       setTimeout(() => {
@@ -558,7 +533,6 @@ const mobileMenuStyles = `
                   top: 70px;
                   right: -100%;
                   width: 100%;
-                  height: calc(100vh - 70px);
                   background: rgba(10, 10, 10, 0.98);
                   backdrop-filter: blur(10px);
                   flex-direction: column;
@@ -568,6 +542,7 @@ const mobileMenuStyles = `
                   transition: right 0.3s ease;
                   border-left: 1px solid var(--border-color);
                   z-index: 999;
+                  display:block;
               }
 
               .nav-links.mobile-active {
@@ -581,26 +556,6 @@ const mobileMenuStyles = `
                   width: 80%;
                   text-align: center;
                   display: block;
-              }
-
-              .cta-button-nav {
-                  margin-top: 20px;
-              }
-
-              .mobile-menu-toggle {
-                  display: flex !important;
-              }
-
-              .mobile-menu-toggle.active span:nth-child(1) {
-                  transform: rotate(45deg) translate(5px, 5px);
-              }
-
-              .mobile-menu-toggle.active span:nth-child(2) {
-                  opacity: 0;
-              }
-
-              .mobile-menu-toggle.active span:nth-child(3) {
-                  transform: rotate(-45deg) translate(7px, -6px);
               }
           }
       `;
