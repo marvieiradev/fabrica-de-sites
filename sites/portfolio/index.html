@@ -56,15 +56,21 @@
             </li>
           </ul>
 
-          <button
-            class="nav-toggle"
-            id="nav-toggle"
-            aria-label="Abrir menu de navegação"
-          >
-            <span class="hamburger-line"></span>
-            <span class="hamburger-line"></span>
-            <span class="hamburger-line"></span>
-          </button>
+          <div class="nav-buttons">
+            <button class="theme-toggle">
+              <i class="fas fa-sun"></i>
+            </button>
+
+            <button
+              class="nav-toggle"
+              id="nav-toggle"
+              aria-label="Abrir menu de navegação"
+            >
+              <span class="hamburger-line"></span>
+              <span class="hamburger-line"></span>
+              <span class="hamburger-line"></span>
+            </button>
+          </div>
         </div>
       </nav>
     </header>
@@ -102,24 +108,13 @@
             <div class="hero-image">
               <div class="hero-image-container">
                 <img
-                  src="assets/frontend_development.webp"
+                  src="images/hero-image.webp"
                   alt="Ilustração de desenvolvimento front-end"
                   class="hero-img"
                 />
                 <div class="hero-image-overlay"></div>
               </div>
             </div>
-          </div>
-
-          <!-- Scroll indicator -->
-          <div class="scroll-indicator">
-            <a
-              href="#about"
-              class="scroll-link"
-              aria-label="Rolar para a seção sobre"
-            >
-              <i class="fas fa-chevron-down"></i>
-            </a>
           </div>
         </div>
       </section>
@@ -171,7 +166,7 @@
             <div class="about-image">
               <div class="about-image-container">
                 <img
-                  src="assets/web_development_coding.jpg"
+                  src="images/dev.webp"
                   alt="Desenvolvedor trabalhando com código"
                   class="about-img"
                 />
@@ -339,47 +334,7 @@
             <article class="project-card" data-category="web">
               <div class="project-image">
                 <img
-                  src="assets/modern_web_interface.jpeg"
-                  alt="Interface moderna de aplicação web"
-                  class="project-img"
-                />
-                <div class="project-overlay">
-                  <div class="project-links">
-                    <a
-                      href="#"
-                      class="project-link"
-                      aria-label="Ver projeto ao vivo"
-                    >
-                      <i class="fas fa-external-link-alt"></i>
-                    </a>
-                    <a
-                      href="#"
-                      class="project-link"
-                      aria-label="Ver código no GitHub"
-                    >
-                      <i class="fab fa-github"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="project-content">
-                <h3 class="project-title">Dashboard Analytics</h3>
-                <p class="project-description">
-                  Interface moderna para análise de dados com gráficos
-                  interativos e design responsivo.
-                </p>
-                <div class="project-tech">
-                  <span class="tech-tag">React</span>
-                  <span class="tech-tag">Chart.js</span>
-                  <span class="tech-tag">CSS3</span>
-                </div>
-              </div>
-            </article>
-
-            <article class="project-card" data-category="web">
-              <div class="project-image">
-                <img
-                  src="assets/javascript_programming.jpg"
+                  src="images/web-01.webp"
                   alt="Aplicação JavaScript"
                   class="project-img"
                 />
@@ -416,10 +371,89 @@
               </div>
             </article>
 
+            <article class="project-card" data-category="web">
+              <div class="project-image">
+                <img
+                  src="images/web-02.webp"
+                  alt="Aplicação JavaScript"
+                  class="project-img"
+                />
+                <div class="project-overlay">
+                  <div class="project-links">
+                    <a
+                      href="#"
+                      class="project-link"
+                      aria-label="Ver projeto ao vivo"
+                    >
+                      <i class="fas fa-external-link-alt"></i>
+                    </a>
+                    <a
+                      href="#"
+                      class="project-link"
+                      aria-label="Ver código no GitHub"
+                    >
+                      <i class="fab fa-github"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-content">
+                <h3 class="project-title">Aplicativo Web</h3>
+                <p class="project-description">
+                  Aplicativo Web constuido com Node.JS e Ract.
+                </p>
+                <div class="project-tech">
+                  <span class="tech-tag">React</span>
+                  <span class="tech-tag">Node.js</span>
+                  <span class="tech-tag">PostgreSQL</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card" data-category="web">
+              <div class="project-image">
+                <img
+                  src="images/web-02.webp"
+                  alt="Aplicação JavaScript"
+                  class="project-img"
+                />
+                <div class="project-overlay">
+                  <div class="project-links">
+                    <a
+                      href="#"
+                      class="project-link"
+                      aria-label="Ver projeto ao vivo"
+                    >
+                      <i class="fas fa-external-link-alt"></i>
+                    </a>
+                    <a
+                      href="#"
+                      class="project-link"
+                      aria-label="Ver código no GitHub"
+                    >
+                      <i class="fab fa-github"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-content">
+                <h3 class="project-title">Aplicativo Web</h3>
+                <p class="project-description">
+                  Aplicativo Web constuido com Nexct.JS.
+                </p>
+                <div class="project-tech">
+                  <span class="tech-tag">JavaScript</span>
+                  <span class="tech-tag">Node.js</span>
+                  <span class="tech-tag">Next.js</span>
+                  <span class="tech-tag">IA</span>
+                </div>
+              </div>
+            </article>
+
             <article class="project-card" data-category="ui">
               <div class="project-image">
                 <img
-                  src="assets/dark_theme_coding.png"
+                  src="images/ui-01.webp"
                   alt="Interface com tema escuro"
                   class="project-img"
                 />
@@ -455,6 +489,82 @@
                 </div>
               </div>
             </article>
+
+            <article class="project-card" data-category="ui">
+              <div class="project-image">
+                <img
+                  src="images/ui-02.webp"
+                  alt="Dashboard"
+                  class="project-img"
+                />
+                <div class="project-overlay">
+                  <div class="project-links">
+                    <a
+                      href="#"
+                      class="project-link"
+                      aria-label="Ver projeto ao vivo"
+                    >
+                      <i class="fas fa-external-link-alt"></i>
+                    </a>
+                    <a
+                      href="#"
+                      class="project-link"
+                      aria-label="Ver código no GitHub"
+                    >
+                      <i class="fab fa-github"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-content">
+                <h3 class="project-title">Dashborad</h3>
+                <p class="project-description">
+                  Dashboard interativo e responsivo.
+                </p>
+                <div class="project-tech">
+                  <span class="tech-tag">CSS</span>
+                  <span class="tech-tag">Design</span>
+                  <span class="tech-tag">UX</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card" data-category="mobile">
+              <div class="project-image">
+                <img
+                  src="images/mobile-01.webp"
+                  alt="Aplicação Android"
+                  class="project-img"
+                />
+                <div class="project-overlay">
+                  <div class="project-links">
+                    <a
+                      href="#"
+                      class="project-link"
+                      aria-label="Ver projeto ao vivo"
+                    >
+                      <i class="fas fa-external-link-alt"></i>
+                    </a>
+                    <a
+                      href="#"
+                      class="project-link"
+                      aria-label="Ver código no GitHub"
+                    >
+                      <i class="fab fa-github"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-content">
+                <h3 class="project-title">Aplicativo Android/IOS</h3>
+                <p class="project-description">Aplicativo multiplataforma.</p>
+                <div class="project-tech">
+                  <span class="tech-tag">React Native</span>
+                  <span class="tech-tag">Node.js</span>
+                  <span class="tech-tag">MongoDB</span>
+                </div>
+              </div>
+            </article>
           </div>
         </div>
       </section>
@@ -471,7 +581,8 @@
 
           <div class="contact-content">
             <div class="contact-info">
-              <h2>Informações de Contato</h2>
+              <h2 class="contact-area-title">Informações de Contato</h2>
+              <p class="subtitle-contact"></p>
               <div class="contact-item">
                 <div class="contact-icon">
                   <i class="fas fa-envelope"></i>

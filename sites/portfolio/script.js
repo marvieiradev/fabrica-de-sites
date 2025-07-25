@@ -16,7 +16,7 @@ function initializePortfolio() {
   initContactForm();
   initBackToTop();
   initTypingEffect();
-  initParallaxEffect();
+  //initParallaxEffect();
   initThemeToggle();
 }
 
@@ -60,15 +60,6 @@ function initNavigation() {
         });
       }
     });
-  });
-
-  // Header background on scroll
-  window.addEventListener("scroll", () => {
-    if (window.scrollY > 100) {
-      header.style.background = "rgba(10, 10, 10, 0.98)";
-    } else {
-      header.style.background = "rgba(10, 10, 10, 0.95)";
-    }
   });
 
   // Active navigation link highlighting
@@ -413,32 +404,7 @@ function initParallaxEffect() {
 
 // ===== THEME TOGGLE (BONUS FEATURE) ===== //
 function initThemeToggle() {
-  // Create theme toggle button
-  const themeToggle = document.createElement("button");
-  themeToggle.className = "theme-toggle";
-  themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
-  themeToggle.setAttribute("aria-label", "Alternar tema");
-
-  // Add theme toggle styles
-  themeToggle.style.cssText = `
-                position: fixed;
-                top: 50%;
-                right: 20px;
-                transform: translateY(-50%);
-                width: 50px;
-                height: 50px;
-                background: var(--gradient-primary);
-                color: var(--bg-color);
-                border: none;
-                border-radius: 50%;
-                cursor: pointer;
-                font-size: 1.2rem;
-                transition: all 0.3s ease;
-                z-index: 999;
-                box-shadow: var(--shadow-medium);
-            `;
-
-  document.body.appendChild(themeToggle);
+  const themeToggle = document.querySelector(".theme-toggle");
 
   // Theme toggle functionality
   let isDarkTheme = true;
@@ -636,10 +602,6 @@ const additionalStyles = `
                 cursor: pointer;
                 margin-left: auto;
                 padding: 0.25rem;
-            }
-            
-            .theme-toggle:hover {
-                transform: translateY(-50%) scale(1.1);
             }
             
             /* Smooth transitions for theme switching */
