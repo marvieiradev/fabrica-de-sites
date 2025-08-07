@@ -1,0 +1,233 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background: linear-gradient(135deg, #1a237e 0%, #283593 50%, #3949ab 100%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.container {
+  position: relative;
+  width: 800px;
+  height: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  z-index: 1;
+}
+
+.card {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.left,
+.right {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.card-green {
+  background: linear-gradient(135deg, #00e676 0%, #00c853 100%);
+  width: 200px;
+  height: 200px;
+}
+
+.card-blue {
+  background: linear-gradient(135deg, #00bcd4 0%, #0097a7 100%);
+  width: 200px;
+  height: 200px;
+  right: 20px;
+}
+
+.card-purple {
+  background: linear-gradient(135deg, #9c27b0 0%, #7b1fa2 100%);
+  width: 200px;
+  height: 200px;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+.card img:hover {
+  transform: scale(1.05);
+}
+
+.icons {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 500px;
+  display: flex;
+  z-index: 10;
+}
+
+.icon-circle {
+  width: 60px;
+  height: 60px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.icon-circle i {
+  font-size: 24px;
+  color: #333;
+}
+
+.icon-left {
+  top: 50%;
+  left: -30px;
+  transform: translateY(-50%);
+}
+
+.icon-bottom-left {
+  bottom: 30px;
+  left: 20px;
+}
+
+.icon-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90px !important;
+  height: 90px !important;
+}
+
+.icon-bottom-right {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  font-weight: bold;
+  font-size: 18px;
+  color: #333;
+}
+
+.badge {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 8px 16px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 10;
+}
+
+.badge-share {
+  top: 20px;
+  right: 20px;
+  background: rgba(255, 255, 255, 0.95);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  padding: 0;
+  justify-content: center;
+}
+
+.badge-share i {
+  color: #e91e63;
+  font-size: 16px;
+}
+
+.badge-certificado {
+  top: 20px;
+  left: 20px;
+  background: #4caf50;
+  color: white;
+}
+
+.badge-certificado i {
+  color: white;
+}
+
+.badge-expert {
+  top: 20px;
+  right: 20px;
+  background: #00bcd4;
+  color: white;
+}
+
+.badge-expert i {
+  color: white;
+}
+
+.badge-pro {
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(255, 255, 255, 0.95);
+  color: #333;
+}
+
+.badge-pro i {
+  color: #ffc107;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+    width: 200px;
+    height: 200px;
+    gap: 15px;
+    padding: 20px;
+  }
+
+  .card-blue,
+  .card-green,
+  .card-purple {
+    width: 120px;
+    height: 120px;
+  }
+
+  .icon-circle {
+    width: 50px;
+    height: 50px;
+  }
+
+  .icon-center {
+    width: 70px !important;
+    height: 70px !important;
+  }
+
+  .icon-circle i {
+    font-size: 20px;
+  }
+}

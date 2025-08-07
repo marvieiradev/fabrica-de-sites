@@ -346,8 +346,8 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: url("../images/bg_hero.webp") center/cover;
-  opacity: 0.5;
+  background: url("images/bg_hero.webp") center/cover;
+  opacity: 0.05;
   z-index: -1;
 }
 
@@ -1149,8 +1149,10 @@ body {
 
 .footer__bottom {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
+  justify-items: center;
+  gap: 2rem;
   padding-top: 2rem;
   border-top: 1px solid rgba(139, 92, 246, 0.1);
 }
@@ -1484,6 +1486,10 @@ body {
     grid-template-columns: 1fr;
     gap: 2rem;
     text-align: center;
+  }
+
+  .footer__list {
+    align-items: center;
   }
 
   .footer__bottom {
