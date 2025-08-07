@@ -1070,7 +1070,7 @@ body {
 
 .footer__content {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 2fr 1fr;
   gap: 4rem;
   margin-bottom: 3rem;
 }
