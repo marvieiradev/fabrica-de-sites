@@ -550,9 +550,7 @@ button {
   line-height: 1.5;
 }
 
-.benefits__image {
-  position: relative;
-  overflow: hidden;
+.benefits__image img {
   border-radius: 20px;
 }
 
@@ -580,6 +578,11 @@ button {
   font-size: var(--h2-font-size);
   margin-bottom: var(--mb-1-5);
   color: var(--white-color);
+}
+
+.benefits__btn {
+  background-color: var(--white-color);
+  color: #25d366;
 }
 
 /* ===== TECHNIQUES SECTION ===== */
